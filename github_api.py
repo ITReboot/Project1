@@ -1,8 +1,22 @@
+# github_api.py
 import requests
+from dotenv import load_dotenv
+import os
 
 class GitHubAPI:
-    def __init__(self, token):
-        self.token = token
+    def __init__(self):
+        """
+        Initialises the GitHubAPI class by loading the GitHub token from environment variables.
+        """
+        # Load environment variables from the .env file
+        load_dotenv()
+
+        # Get the token from the environment variable
+        self.token = os.getenv('GITHUB_TOKEN')
+
+        if not self.token:
+            raise ValueError("GitHub token is missing in the environment variables.")
+
         self.base_url = "https://api.github.com/"
         self.headers = {
             "Authorization": f"token {self.token}"
