@@ -12,7 +12,7 @@ class GitHubAPI:
         load_dotenv()
 
         # Get the token from the environment variable
-        self.token = os.getenv('GITHUB_TOKEN')
+        self.token = os.getenv('User_GITHUB_TOKEN')
 
         if not self.token:
             raise ValueError("GitHub token is missing in the environment variables.")
