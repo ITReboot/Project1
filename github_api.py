@@ -38,5 +38,7 @@ class GitHubAPI:
             print(f"User: {user_data['login']}")
             print(f"Name: {user_data['name']}")
             print(f"Public Repos: {user_data['public_repos']}")
+            print(f"repos_url: {user_data['repos_url']}")
+            print(f"organizations_url: {user_data['organizations_url']}")
         else:
             print("Could not retrieve user details.")
