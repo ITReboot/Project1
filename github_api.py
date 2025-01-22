@@ -5,9 +5,7 @@ import os
 
 class GitHubAPI:
     def __init__(self):
-        """
-        Initialises the GitHubAPI class by loading the GitHub token from environment variables.
-        """
+        
         # Load environment variables from the .env file
         load_dotenv()
 
@@ -34,7 +32,8 @@ class GitHubAPI:
 
     def print_user_details(self):
         user_data = self.fetch_user_details()
-        print(type(user_data))
+        print(user_data)
+        #print(type(user_data))
         if user_data:
             print(f"User: {user_data['login']}")
             print(f"Name: {user_data['name']}")
