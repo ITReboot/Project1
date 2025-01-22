@@ -31,4 +31,4 @@ jobs:
     
     - name: Run my python app
       run: |
-        python github_get_repo.py
+        python main.py
