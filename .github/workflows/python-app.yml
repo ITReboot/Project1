@@ -26,7 +26,11 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install requests  python-dotenv
+        pip install requests  
+        pip install python-dotenv
+
+    - name: Set up GitHub Token as environment variable
+      run: echo "GITHUB_TOKEN=${{ secrets.User_GITHUB_TOKEN }}" >> $User_GITHUB_ENV
             
     - name: Run my python app
       run: |
