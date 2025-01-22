@@ -30,7 +30,7 @@ jobs:
         pip install python-dotenv
 
     - name: Set up GitHub Token as environment variable
-      run: echo "GITHUB_TOKEN=${{ secrets.User_GITHUB_TOKEN }}" >> $User_GITHUB_ENV
+      run: echo "User_GITHUB_TOKEN=${{ secrets.User_GITHUB_TOKEN }}" >> $User_GITHUB_ENV
             
     - name: Run my python app
       run: |
