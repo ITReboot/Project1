@@ -1,7 +1,7 @@
 from github_api import GitHubAPI
 
 if __name__ == "__main__":
-    token = "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"  # Replace with your GitHub token
+    token = "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"  
     github = GitHubAPI(token)
 
 
