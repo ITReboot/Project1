@@ -4,8 +4,8 @@ from github_api import GitHubAPI
 
 
 if __name__ == "__main__":
- 
-    github = GitHubAPI('USER_GITHUB_TOKEN')
+    token = os.getenv('GITHUB_TOKEN')
+    github = GitHubAPI(token)
 
     
     github.print_user_details()
