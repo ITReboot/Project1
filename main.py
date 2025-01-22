@@ -1,4 +1,7 @@
+import os
 from github_api import GitHubAPI
+
+
 
 if __name__ == "__main__":
     token = os.getenv('USER_GITHUB_TOKEN')
