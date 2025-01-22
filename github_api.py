@@ -34,6 +34,8 @@ class GitHubAPI:
 
     def print_user_details(self):
         user_data = self.fetch_user_details()
+        output_user_data = user_data.json()
+        print(output_user_data)
         if user_data:
             print(f"User: {user_data['login']}")
             print(f"Name: {user_data['name']}")
