@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 import os
 
 class GitHubAPI:
-    def __init__(self):
+    def __init__(self, token):
         """
         Initialises the GitHubAPI class by loading the GitHub token from environment variables.
         """
