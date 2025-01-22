@@ -6,7 +6,6 @@ repo_name = "automateInfra"
 #  URL to access the GitHub 
 url = f"https://api.github.com/repos/{owner}/{repo_name}"
 
-# Send a GET request to the GitHub API
 response = requests.get(url)
 
 if response.status_code == 200:
